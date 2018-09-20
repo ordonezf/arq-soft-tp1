@@ -1,7 +1,14 @@
-version: '2'
+version: '3'
 
 services:
-
+    gunicorn:
+        build: './py'
+        ports:
+          - "8000:8000"
+    node:
+        build: './js'
+        ports:
+          - "8111:8111"
     nginx:
         image: nginx:1.15.3
         ports:
