@@ -7,4 +7,4 @@ COPY app.py /opt/server/app.py
 WORKDIR /opt/server/
 
 # https://docs.docker.com/compose/gettingstarted/
-ENTRYPOINT ["gunicorn", "-w", "4", "app:app", "-b", "0.0.0.0:8000"]
+ENTRYPOINT ["gunicorn", "-w", "1", "app:app", "-b", "0.0.0.0:8000"]
