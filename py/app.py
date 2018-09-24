@@ -6,10 +6,10 @@ app = Flask(__name__)
 @app.route('/')
 def root():
     print('Ive been hit by root!')
-    return "Hello, World!"
+    return "[python]Hello, World!\n"
 
 @app.route('/wait')
 def wait():
     time.sleep(5)
     print('Ive been hit by wait!')
-    return "I waited 5 seconds!"
+    return "[python]I waited 5 seconds!\n"

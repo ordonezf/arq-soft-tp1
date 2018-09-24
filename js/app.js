@@ -3,12 +3,12 @@ const express = require('express');
 const app = express()
 
 app.get('/', (req, res) => {console.log('Ive been hit by root!');
-                            res.send('Hello, World!')});
+                            res.send('[node]Hello, World!\n')});
 
 app.get('/wait', (req, res) => {
     setTimeout(function() {
         console.log("Ive been hit by wait!");
-        res.send('Hello World, 5 seconds later!');
+        res.send('[node]Hello World, 5 seconds later!\n');
     }, 5000);
 });
 
