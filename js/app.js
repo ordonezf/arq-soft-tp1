@@ -20,4 +20,6 @@ app.get('/intensive', (req, res) => {console.log('Ive been hit by intensive!');
     }
     res.send('[node]Intensive processing done!\n')});
 
+app.use('/static', express.static('static'));
+
 app.listen(8111, () => console.log('I am listening on port 8111!'))
