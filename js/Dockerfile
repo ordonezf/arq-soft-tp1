@@ -1,6 +1,6 @@
 FROM node:10.9.0
 
-COPY static /opt/server/app/static
+COPY static/ /opt/server/app/static
 
 COPY package*.json /opt/server/app/
 
