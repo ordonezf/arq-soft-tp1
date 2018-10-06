@@ -2,7 +2,7 @@ FROM python:3.6-slim
 
 RUN pip install flask gunicorn
 
-ADD static /opt/server/static
+COPY static/ /opt/server/static
 
 COPY app.py /opt/server/app.py
 
