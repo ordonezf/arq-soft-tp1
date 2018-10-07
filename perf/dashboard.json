@@ -495,8 +495,8 @@
       {
         "allValue": null,
         "current": {
-          "text": "tp-arq-docker_node_1",
-          "value": "tp-arq-docker_node_1"
+          "text": "arq-soft-tp1_node_1",
+          "value": "arq-soft-tp1_node_1"
         },
         "hide": 0,
         "includeAll": false,
@@ -506,23 +506,23 @@
         "options": [
           {
             "selected": true,
-            "text": "tp-arq-docker_node_1",
-            "value": "tp-arq-docker_node_1"
+            "text": "arq-soft-tp1_node_1",
+            "value": "arq-soft-tp1_node_1"
           },
           {
             "selected": false,
-            "text": "tp-arq-docker_node_2",
-            "value": "tp-arq-docker_node_2"
+            "text": "arq-soft-tp1_node_2",
+            "value": "arq-soft-tp1_node_2"
           },
           {
             "selected": false,
-            "text": "tp-arq-docker_node_3",
-            "value": "tp-arq-docker_node_3"
+            "text": "arq-soft-tp1_node_3",
+            "value": "arq-soft-tp1_node_3"
           },
           {
             "selected": false,
-            "text": "tp-arq-docker_cadvisor_1",
-            "value": "tp-arq-docker_cadvisor_1"
+            "text": "arq-soft-tp1_cadvisor_1",
+            "value": "arq-soft-tp1_cadvisor_1"
           },
           {
             "selected": false,
@@ -531,26 +531,26 @@
           },
           {
             "selected": false,
-            "text": "tp-arq-docker_grafana_1",
-            "value": "tp-arq-docker_grafana_1"
+            "text": "arq-soft-tp1_grafana_1",
+            "value": "arq-soft-tp1_grafana_1"
           },
           {
             "selected": false,
-            "text": "tp-arq-docker_graphite_1",
-            "value": "tp-arq-docker_graphite_1"
+            "text": "arq-soft-tp1_graphite_1",
+            "value": "arq-soft-tp1_graphite_1"
           },
           {
             "selected": false,
-            "text": "tp-arq-docker_gunicorn_1",
-            "value": "tp-arq-docker_gunicorn_1"
+            "text": "arq-soft-tp1_gunicorn_1",
+            "value": "arq-soft-tp1_gunicorn_1"
           },
           {
             "selected": false,
-            "text": "tp-arq-docker_nginx_1",
-            "value": "tp-arq-docker_nginx_1"
+            "text": "arq-soft-tp1_nginx_1",
+            "value": "arq-soft-tp1_nginx_1"
           }
         ],
-        "query": "tp-arq-docker_node_1, tp-arq-docker_node_2, tp-arq-docker_node_3, tp-arq-docker_cadvisor_1, tp-arq-docker_flask_1, tp-arq-docker_grafana_1, tp-arq-docker_graphite_1, tp-arq-docker_gunicorn_1, tp-arq-docker_nginx_1",
+        "query": "arq-soft-tp1_node_1, arq-soft-tp1_node_2, arq-soft-tp1_node_3, arq-soft-tp1_cadvisor_1, tp-arq-docker_flask_1, arq-soft-tp1_grafana_1, arq-soft-tp1_graphite_1, arq-soft-tp1_gunicorn_1, arq-soft-tp1_nginx_1",
         "type": "custom"
       }
     ]
