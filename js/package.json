@@ -19,6 +19,7 @@
   "dependencies": {
     "express": "^4.16.3",
     "pg": "^7.5.0",
-    "pg-promise": "^8.4.6"
+    "pg-promise": "^8.4.6",
+    "tableify": "^1.1.0"
   }
 }

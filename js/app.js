@@ -1,5 +1,6 @@
 const express = require('express');
 const pg = require('pg-promise')();
+const tableify = require('tableify');
 
 const db = pg('postgres://roy:fielding@postgres:5432/arqsoft');
 
@@ -29,7 +30,7 @@ app.get('/db/movies/top', (req, res) => {
     db.any("select m.name as Movie, avg(r.rating) as Avg_Rating, count(*) as Reviews from movies m join ratings r on r.movie_id = m.id group by 1 having count(*) > 800 order by 2 desc limit 10")
         .then(function (data) {
             console.log("DATA:", data);
-            res.send(data);
+            res.send(tableify({t : data}));
         })
         .catch(function (error) {
             console.log("ERROR:", error);
