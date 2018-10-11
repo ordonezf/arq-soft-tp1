@@ -26,10 +26,9 @@ app.get('/intensive', (req, res) => {console.log('Ive been hit by intensive!');
 
 app.use('/static', express.static('static'));
 
-app.get('/db/movies/top', (req, res) => {
-    db.any("select m.name as Movie, avg(r.rating) as Avg_Rating, count(*) as Reviews from movies m join ratings r on r.movie_id = m.id group by 1 having count(*) > 800 order by 2 desc limit 10")
+app.get('/db/movies/top/:n', (req, res) => {
+    db.any("select m.name as Movie, avg(r.rating) as Avg_Rating, count(*) as Reviews from movies m join ratings r on r.movie_id = m.id group by 1 having count(*) > 800 order by 2 desc limit " + req.params.n)
         .then(function (data) {
-            console.log("DATA:", data);
             res.send(tableify({t : data}));
         })
         .catch(function (error) {
