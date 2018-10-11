@@ -14,9 +14,9 @@ services:
         build: './py'
         ports:
           - "8000:8000"
+        command: --workers 3
         depends_on:
           - "postgres"
-
     node:
         build: './js'
         ports:
