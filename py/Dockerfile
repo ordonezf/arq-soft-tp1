@@ -1,6 +1,8 @@
 FROM python:3.6-slim
 
-RUN pip install flask gunicorn
+RUN pip install --upgrade pip
+
+RUN pip install flask gunicorn pandas sqlalchemy psycopg2-binary
 
 COPY static/ /opt/server/static
 

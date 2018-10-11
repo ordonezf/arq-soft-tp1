@@ -1,14 +1,29 @@
 version: '3'
 
 services:
+    postgres:
+      build: './db'
+      ports:
+        - "5432:5432"
+      environment:
+        POSTGRES_USER: "roy"
+        POSTGRES_PASSWORD: "fielding"
+        POSTGRES_DB: "arqsoft"
+
     gunicorn:
         build: './py'
         ports:
           - "8000:8000"
+        depends_on:
+          - "postgres"
+
     node:
         build: './js'
         ports:
           - "8111"
+        depends_on:
+          - "postgres"
+
     nginx:
         image: nginx:1.15.3
         ports:

@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/ordonezf/arq-soft-tp1#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "pg": "^7.5.0",
+    "pg-promise": "^8.4.6",
+    "tableify": "^1.1.0"
   }
 }
